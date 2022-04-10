@@ -1,12 +1,13 @@
 import React from 'react'
 import Typical from 'react-typical'
-
+import "./Profile.css"
 export default function Profile() {
   return (
     <div className='profile-container'>
         <div className='profile-parent'>
             <div className='profile-details'>
                 <div className='cool'>
+                    <div className='cool-icon'>
                     <a href="">
                         <i className='fa fa-facebook-square'> </i>
                     </a>
@@ -24,8 +25,9 @@ export default function Profile() {
                     <a href="">
                         <i className='fa fa-linkedin-square'> </i>
                     </a>
+                    </div>
                 </div>
-                <div className="profile-detail-name">
+                <div className="profile-details-name">
                     <span className="primary-text">
                         {" "}
                         Hello, I'M <span className="highlighted-text"> Tom</span>
@@ -55,6 +57,18 @@ export default function Profile() {
                         </span>
                     </span>
                 </div>
+                <div className='profile-options'>
+                    <button className='btn primary-btn'>
+                        {" "}
+                        Hire Me {" "}
+                    </button>
+                    <a href='resume(SE)ndm.pdf' download="Tom Resume">
+                            <button className='btn highlighted-btn'>Get Resume</button>
+                    </a>
+                </div>
+            </div>
+            <div className="profile-picture">
+                <div className="profile-picture-background"></div>
             </div>
         </div>
     </div>
